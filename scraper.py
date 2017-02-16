@@ -5,7 +5,7 @@ import scraperwiki
 import urllib2, lxml.html
 #
 # # Read in a page
-html = scraperwiki.scrape("http://usda.mannlib.cornell.edu/usda/current/BeeColonies/BeeColonies-05-12-2016.pdf")
+url = scraperwiki.scrape("http://usda.mannlib.cornell.edu/usda/current/BeeColonies/BeeColonies-05-12-2016.pdf")
 
 pdfdata = urllib2.urlopen(url).read()
 xmldata = scraperwiki.pdftoxml(pdfdata)
